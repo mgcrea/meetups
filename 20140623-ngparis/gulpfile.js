@@ -133,7 +133,7 @@ gulp.task('styles:dist', function() {
   return gulp.src(paths.styles, {cwd: paths.src, base: paths.src})
     .pipe(less())
     .pipe(prefix('last 1 version', '> 1%', 'ie 8'))
-    .pipe(gulp.dest(paths.tmp));
+    .pipe(gulp.dest(paths.src));
 });
 
 
